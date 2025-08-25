@@ -29,7 +29,7 @@ trapezoid_areas = (concentration[:-1] + concentration[1:]) / 2 * dt
 total_area_trapz = np.sum(trapezoid_areas)
 ```
 
-This yields an area of x mg/L·s. With an injected mass of x kg, the discharge is x L/s.
+This yields an area of 34.8 mg/L·s. With an injected mass of 200 g, the discharge is 5.7 L/s.
 
 % solution_end
 
@@ -48,7 +48,7 @@ Note, however, that for this data set the differences between the integration me
 
 % solution_end
 
-**1.3 How many points would you choose for integrating the simulated concentration curve with Simpson's rule? Justify your answer.**
+**1.3 Paste the plot that you created in task 1.4. How many points would you choose for integrating the simulated concentration curve with Simpson's rule? Justify your answer.**
 
 % solution_start
 
@@ -94,12 +94,24 @@ $$
 
 **2.2 Paste your plot of the Taylor approximations of $\ln(x)$ (output of taks 2.5).**
 
+See analysis.ipynb.
 
 
-**2.3 How well do the Taylor polynomials apprximate the function $\ln(x)$? Consider the influence of the order of the polynomial and the $x$-value in your answer.**
+**2.3 How well do the Taylor polynomials apprximate the function $\ln(x)$? Consider the influence of the order of the polynomial and the value of $x$ in your answer.**
 
 
 % solution_start
+
+Very close to the expansion point, all Taylor polynomials (1st to 4th order) provide a reasonable approximation of $\ln(x)$. The closer to the expansion point, the better the approximation is (for all polynomial orders).
+
+However, the linear approximation quickly deviates from the curve.
+With increasing order of the polynomial, the approximation gets better, as long as we don't move too far away from the expansion point.
+
+Beyond a certain distance from the expansion point, however, all polynomials deviate from the line of $\ln(x)$.
+The higher-order polynomials then even have a larger absolute error than the lower-order approximation.
+In fact, the Taylor series for $\ln(x)$ diverges for $x>2$, so adding more terms to the approximation does not help.
+
+This shows that the Taylor polynomials provide a local approximation that only works well in the neighbourhood of the expansion point.
 
 % solution_end
 
