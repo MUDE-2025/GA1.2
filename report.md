@@ -92,12 +92,16 @@ $$
 
 % solution_end
 
-**2.2 Paste your plot of the Taylor approximations of $\ln(x)$ (output of taks 2.5).**
+**2.2 Paste your plot of the Taylor approximations of $\ln(x)$ (output of task 2.5).**
 
-See analysis.ipynb.
+% solution_start
+
+![](./taylor_approximation.svg)
+
+% solution_end
 
 
-**2.3 How well do the Taylor polynomials apprximate the function $\ln(x)$? Consider the influence of the order of the polynomial and the value of $x$ in your answer.**
+**2.3 How well do the Taylor polynomials approximate the function $\ln(x)$? Consider the influence of the order of the polynomial and the value of $x$ in your answer.**
 
 
 % solution_start
@@ -111,7 +115,7 @@ Beyond a certain distance from the expansion point, however, all polynomials dev
 The higher-order polynomials then even have a larger absolute error than the lower-order approximation.
 In fact, the Taylor series for $\ln(x)$ diverges for $x>2$, so adding more terms to the approximation does not help.
 
-This shows that the Taylor polynomials provide a local approximation that only works well in the neighbourhood of the expansion point.
+This shows that the Taylor polynomials provide a local approximation that only works well in the neighborhood of the expansion point.
 
 % solution_end
 
@@ -122,11 +126,11 @@ This shows that the Taylor polynomials provide a local approximation that only w
 % solution_start
 
 For backward differences we evaluate the Taylor series around $x_i$ at $x_{i−1}$ and $x_{i−2}$.
-To end up with a second-order accurate expression, we need to inlude terms at least up to $n=2$.
+To end up with a second-order accurate expression, we need to include terms at least up to $n=2$.
 This yields the following Taylor approximations:
     
-$$f(x_{i-1})\approx f(x_{i})+(x_{i-1}-x_i)\frac{\partial f(x_{i})}{\partial x} +\frac{(x_{i-1}-x_i)^2}{2}\frac{\partial^2 f(x_i)}{\partial x^2}+\mathcal{O}(x_{i-1}-x_i)^3$$
-$$f(x_{i-2})\approx f(x_{i})+(x_{i-2}-x_i)\frac{\partial f(x_{i})}{\partial x} +\frac{(x_{i-2}-x_i)^2}{2}\frac{\partial^2 f(x_i)}{\partial x^2}+\mathcal{O}(x_{i-2}-x_i)^3$$
+$$f(x_{i-1})\approx f(x_{i})+(x_{i-1}-x_i)\frac{\partial f(x_{i})}{\partial x} +\frac{(x_{i-1}-x_i)^2}{2}\frac{\partial^2 f(x_i)}{\partial x^2}+\mathcal{O}((x_{i-1}-x_i)^3)$$
+$$f(x_{i-2})\approx f(x_{i})+(x_{i-2}-x_i)\frac{\partial f(x_{i})}{\partial x} +\frac{(x_{i-2}-x_i)^2}{2}\frac{\partial^2 f(x_i)}{\partial x^2}+\mathcal{O}((x_{i-2}-x_i)^3)$$
 
     
 We set $\Delta x = x_i - x_{i-1}$ for all $i$, which also means: $2\Delta x = x_i-x_{i-2}$
@@ -138,17 +142,17 @@ To get rid of the term including the second derivative, we multiply the first ex
     
 $$
 \begin{aligned}
-4f(x_{i-1})-f(x_{i-2})&\approx (4-1)f(x_{i})-(4-2)\Delta x\frac{\partial f(x_{i})}{\partial x} + (4-4)\frac{\Delta x^2}{2}\frac{\partial^2 f(x_i)}{\partial x^2}+\mathcal{O}(\Delta x)^3\\
-&= 3f(x_{i})-2\Delta x\frac{\partial f(x_{i})}{\partial x} + \mathcal{O}(\Delta x)^3
+4f(x_{i-1})-f(x_{i-2})&\approx (4-1)f(x_{i})-(4-2)\Delta x\frac{\partial f(x_{i})}{\partial x} + (4-4)\frac{\Delta x^2}{2}\frac{\partial^2 f(x_i)}{\partial x^2}+\mathcal{O}(\Delta x^3)\\
+&= 3f(x_{i})-2\Delta x\frac{\partial f(x_{i})}{\partial x} + \mathcal{O}(\Delta x^3)
 \end{aligned}
 $$
 
 Bring the derivative to the left side and all terms involving $f(x)$ to the right side:
-$$ 2\Delta x\frac{\partial f(x_{i})}{\partial x} \approx 3f(x_i)-4f(x_{i-1})+f(x_{i-2}) +\mathcal{O}(\Delta x)^3$$
+$$ 2\Delta x\frac{\partial f(x_{i})}{\partial x} \approx 3f(x_i)-4f(x_{i-1})+f(x_{i-2}) +\mathcal{O}(\Delta x^3)$$
 
 Divide by $2 \Delta x$:
 
-$$\frac{\partial f(x_{i})}{\partial x} \approx \frac{3f(x_i)-4f(x_{i-1})+f(x_{i-2})}{2\Delta x} +\mathcal{O}(\Delta x)^2$$
+$$\frac{\partial f(x_{i})}{\partial x} \approx \frac{3f(x_i)-4f(x_{i-1})+f(x_{i-2})}{2\Delta x} +\mathcal{O}(\Delta x^2)$$
 
 Note how the order of the error changes because we divide by $\Delta x$.
 The final expression is second-order accurate.
