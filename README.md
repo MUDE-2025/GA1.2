@@ -8,9 +8,13 @@
 
 You can access this assignment with the following link: `classroom.github.com/a/<xxxxxxx>`.
 
-For this assignment, work through the tasks in the notebook `GA1.2_taylor_made_approximations.ipynb`. The assignment is split into three parts that are largely independent from each other.
+For this assignment, work through the tasks in the notebook `GA1.2_taylor_made_approximations.ipynb`. The assignment is split into three parts that are independent from each other.
+
+The first part focuses on numerical integration, based on an example from hydrological data analysis.
+The second part is about approximating a function with a Taylor series.
+The third part is about using Taylor series to approximate derivatives numerically.
+
 After finishing all tasks in each part, answer the questions in `report.md`. For some of the questions, you can copy your answers from one of the tasks in `GA1.2_taylor_made_approximations.ipynb` directly, for others, some additional reflection is required.
-Your grade for this assignment will be based on your answers in `report.md`.
 
 This assignment is still ungraded. You do not need to submit anything.
 
