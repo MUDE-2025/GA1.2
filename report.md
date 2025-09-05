@@ -135,8 +135,8 @@ $$f(x_{i-2})\approx f(x_{i})+(x_{i-2}-x_i)\frac{\partial f(x_{i})}{\partial x} +
     
 We set $\Delta x = x_i - x_{i-1}$ for all $i$, which also means: $2\Delta x = x_i-x_{i-2}$
     
-$$f(x_{i-1})\approx f(x_{i})-\Delta x\frac{\partial f(x_{i})}{\partial x} +\frac{\Delta x^2}{2}\frac{\partial^2 f(x_i)}{\partial x^2}+\mathcal{O}(\Delta x)^3$$
-$$f(x_{i-2})\approx f(x_{i})-2\Delta x\frac{\partial f(x_{i})}{\partial x} +\frac{4\Delta x^2}{2}\frac{\partial^2 f(x_i)}{\partial x^2}+\mathcal{O}(\Delta x)^3$$
+$$f(x_{i-1})\approx f(x_{i})-\Delta x\frac{\partial f(x_{i})}{\partial x} +\frac{\Delta x^2}{2}\frac{\partial^2 f(x_i)}{\partial x^2}+\mathcal{O}(\Delta x^3)$$
+$$f(x_{i-2})\approx f(x_{i})-2\Delta x\frac{\partial f(x_{i})}{\partial x} +\frac{4\Delta x^2}{2}\frac{\partial^2 f(x_i)}{\partial x^2}+\mathcal{O}(\Delta x^3)$$
     
 To get rid of the term including the second derivative, we multiply the first expression by 4 and subtract the second expression:
     
