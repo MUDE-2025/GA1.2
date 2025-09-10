@@ -2,7 +2,7 @@
 
 *[CEGM1000 MUDE](http://mude.citg.tudelft.nl/)*
 
-*Written by: Anna Störiko, Ronald Brinkgreve*
+*Written by: Anna Störiko, Ronald Brinkgreve, Justin Pittman, Jaime Arriaga Garcia, Robert Lanzafame*
 
 *Due: Friday, September 12, 2025.*
 
