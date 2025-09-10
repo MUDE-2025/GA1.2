@@ -44,7 +44,7 @@ While Simpson's rule would have an even lower error, it requires equally spaced 
 The error of the midpoint rule scales with the size of integration intervals in the same way as for the trapezoidal rule.
 However, it requires evaluating the function at the midpoint of each interval which is is not possible with fixed measurements.
 
-Note, however, that for this data set the differences between the integration methods are actually all small. Experimenal and measurement inaccuracies will be more important for the final discharge estimate than the choice of numerical integration technique.
+Note, however, that for this data set the differences between the integration methods are actually all small. Experimental and measurement inaccuracies will be more important for the final discharge estimate than the choice of numerical integration technique.
 
 % solution_end
 
@@ -52,7 +52,7 @@ Note, however, that for this data set the differences between the integration me
 
 % solution_start
 
-With few integration intervals (less than ten), the result strongly changes with the number of intervals, indicating large intergration errors.
+With few integration intervals (less than ten), the result strongly changes with the number of intervals, indicating large integration errors.
 At around 20 intervals, the solution stabilizes and does not change considerably anymore.
 Thus, 20 integration intervals seems to be a reasonable choice to achieve accurate results while avoiding unnecessary computational costs.
 
@@ -60,7 +60,7 @@ Thus, 20 integration intervals seems to be a reasonable choice to achieve accura
 
 ## Part 2
 
-**2.1 What is the expression for the 4th order Taylor polynomial of $\ln(x)$ around $x_0 = 1$? You can copy a picture of your solution from taks 2.1 (or type the solution in Markdown format).**
+**2.1 What is the expression for the 4th order Taylor polynomial of $\ln(x)$ around $x_0 = 1$? You can copy a picture of your solution from task 2.1 (or type the solution in Markdown format).**
 
 % solution_start
 
