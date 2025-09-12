@@ -1,10 +1,6 @@
 # Group assignment 1.2: Taylor-made approximations
 
-*[CEGM1000 MUDE](http://mude.citg.tudelft.nl/)*
-
-*Written by: Anna Störiko, Ronald Brinkgreve, Justin Pittman, Jaime Arriaga Garcia, Robert Lanzafame*
-
-*Due: Friday, September 12, 2025.*
+*Due: Friday, September 12, 2025. This assignment is still ungraded. You do not need to submit anything.*
 
 This assignment is split into three parts that are independent from each other:
 
@@ -14,6 +10,4 @@ This assignment is split into three parts that are independent from each other:
 
 After finishing all tasks in each part, answer the corresponding questions in `report.md`. Often, you can just use your answers from one of the tasks in the notebook directly. But filling in the report template will help you become familiar with the Markdown format that you will use for submission in the following weeks. For some questions, a bit of additional reflection is required.
 
-**This assignment is still ungraded. You do not need to submit anything.**
-
-> Copyright 2025 MUDE, Delft University of Technology. This work is licensed under a CC BY 4.0 License
+> By Anna Störiko, Ronald Brinkgreve, Justin Pittman, Jaime Arriaga Garcia, Robert Lanzafame, Delft University of Technology. CC BY 4.0, more info [on the Credits page of Workbook](https://mude.citg.tudelft.nl/workbook-2025/credits.html).
