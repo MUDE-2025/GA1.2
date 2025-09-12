@@ -1,4 +1,4 @@
-# Group assignment 1.2: Taylor-made approximations
+# Group assignment 1.2: Streams & series
 
 *Due: Friday, September 12, 2025. This assignment is still ungraded. You do not need to submit anything.*
 
