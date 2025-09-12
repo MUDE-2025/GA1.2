@@ -1,11 +1,5 @@
 # Group Assignment 1.2
 
-*[CEGM1000 MUDE](http://mude.citg.tudelft.nl/)*
-
-*Written by: Anna Störiko, Ronald Brinkgreve*
-
-*Due: Friday, September 12, 2025*
-
 ## Part 1
 
 **1.1 Briefly summarize how you computed the discharge from the concentration measurements and present your result.
@@ -159,4 +153,4 @@ The final expression is second-order accurate.
 
 % solution_end
 
-*Copyright 2025 MUDE, TU Delft. This work is licensed under CC BY 4.0 License.*
+> By Anna Störiko, Ronald Brinkgreve, Delft University of Technology. CC BY 4.0, more info [on the Credits page of Workbook](https://mude.citg.tudelft.nl/workbook-2025/credits.html).
