@@ -2,6 +2,8 @@
 
 *Due: Friday, September 12, 2025. This assignment is still ungraded. You do not need to submit anything.*
 
+You can preview this assignment on https://mude.citg.tudelft.nl/workbook-2025/assignments/GA1.2/README.html. After the deadline, this link will include solutions. The preview of the assignment version is shared here: https://mude.citg.tudelft.nl/workbook-2025/no_solutions/assignments/GA1.2/README.html. Pages can be downloaded as `.md` and `.ipynb` files to your computer.
+
 This assignment is split into three parts that are independent from each other:
 
 1. [Numerical integration, based on an example from hydrological data analysis](./1-discharge-numerical-integration.ipynb)
