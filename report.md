@@ -6,7 +6,6 @@
 Include the code line(s) that implement the numerical integration.**
 
 
-% solution_start
 
 We computed the discharge $Q$ from the injected solute mass $m$ and the area under the concentration curve $A$ as follows:
 
@@ -25,11 +24,9 @@ total_area_trapz = np.sum(trapezoid_areas)
 
 This yields an area of 34.8 mg/L·s. With an injected mass of 200 g, the discharge is 5.7 L/s.
 
-% solution_end
 
 **1.2 Justify your choice of numerical integration method, taking theoretical and practical considerations into account.**
 
-% solution_start
 
 For the dataset, the trapezoidal rule is a suitable integration technique.
 For a given number of integration points, it (theoretically) has a lower error compared to the left and right Riemann sum.
@@ -40,23 +37,19 @@ However, it requires evaluating the function at the midpoint of each interval wh
 
 Note, however, that for this data set the differences between the integration methods are actually all small. Experimental and measurement inaccuracies will be more important for the final discharge estimate than the choice of numerical integration technique.
 
-% solution_end
 
 **1.3 Paste the plot that you created in task 1.4. How many points would you choose for integrating the simulated concentration curve with Simpson's rule? Justify your answer.**
 
-% solution_start
 
 With few integration intervals (less than ten), the result strongly changes with the number of intervals, indicating large integration errors.
 At around 20 intervals, the solution stabilizes and does not change considerably anymore.
 Thus, 20 integration intervals seems to be a reasonable choice to achieve accurate results while avoiding unnecessary computational costs.
 
-% solution_end
 
 ## Part 2
 
 **2.1 What is the expression for the 4th order Taylor polynomial of $\ln(x)$ around $x_0 = 1$? You can copy a picture of your solution from task 2.1 (or type the solution in Markdown format).**
 
-% solution_start
 
 The first four derivatives of $f(x) = \ln(x)$ are:
 $$f^\prime(x) = \frac{1}{x}$$
@@ -84,21 +77,17 @@ f(x) &=  f(x_0) + (x-x_0)f'(x_0)+\frac{(x-x_0)^2}{2!}f''(x_0)+ \frac{(x-x_0)^3}{
 \end{aligned}
 $$
 
-% solution_end
 
 **2.2 Paste your plot of the Taylor approximations of $\ln(x)$ (output of task 2.5).**
 
-% solution_start
 
 ![](./taylor_approximation.svg)
 
-% solution_end
 
 
 **2.3 How well do the Taylor polynomials approximate the function $\ln(x)$? Consider the influence of the order of the polynomial and the value of $x$ in your answer.**
 
 
-% solution_start
 
 Very close to the expansion point, all Taylor polynomials (1st to 4th order) provide a reasonable approximation of $\ln(x)$. The closer to the expansion point, the better the approximation is (for all polynomial orders).
 
@@ -111,13 +100,11 @@ In fact, the Taylor series for $\ln(x)$ diverges for $x>2$, so adding more terms
 
 This shows that the Taylor polynomials provide a local approximation that only works well in the neighborhood of the expansion point.
 
-% solution_end
 
 ## Part 3
 
 **3.1 Copy your derivation from task 3.1 here (as a picture or in Markdown format).**
 
-% solution_start
 
 For backward differences we evaluate the Taylor series around $x_i$ at $x_{i−1}$ and $x_{i−2}$.
 To end up with a second-order accurate expression, we need to include terms at least up to $n=2$.
@@ -151,6 +138,5 @@ $$\frac{\partial f(x_{i})}{\partial x} \approx \frac{3f(x_i)-4f(x_{i-1})+f(x_{i-
 Note how the order of the error changes because we divide by $\Delta x$.
 The final expression is second-order accurate.
 
-% solution_end
 
 > By Anna Störiko, Ronald Brinkgreve, Delft University of Technology. CC BY 4.0, more info [on the Credits page of Workbook](https://mude.citg.tudelft.nl/workbook-2025/credits.html).
